@@ -1,2 +1,5 @@
 # cryptext
-Cryptext is a continuation &amp; refresh of an old TroyIV program first released by me in 2021
+Cryptext is a continuation &amp; refresh of an old TroyIV program first released by me in 2021.
+
+## Description
+Text encrypting app written in python.
