@@ -1,0 +1,46 @@
+Name concepts of the program: 
+SCPA 128 (representing names of 4 techniques used and 128bit key)
+TroyIV (Troy as a symbol of defence, IV for 4 encryption techniques used)
+
+This encryption program is based on symmetric-key encryption (https://en.wikipedia.org/wiki/Symmetric-key_algorithm).
+
+Useful reference for building encryption algorithm (https://www.quora.com/How-can-I-build-my-own-encryption-algorithm).
+
+It is capable of encrypting any character within Unicode UTF-8 (https://en.wikipedia.org/wiki/UTF-8).
+UTF-8 standart is capable of encoding roughly 1,112,000 characters -> UTF-8 table (https://www.utf8-chartable.de/).
+
+Encryption techniques used in this algorithm:
+    1. Substitution cipher (substitution of characters for other characters)
+    2. Columnar transposition (route cipher -> the plaintext is written in a grid, and then read off following the route chosen)
+    3. Permutation cipher (rearranging characters within the created blocks of text - in our case the length of the key)
+    4. Additional measures (for confusion and additional security)
+        a) random addtion (addition of a random character on the random position in the text)
+        b) order (the order in which the final encrypted text is outputted)
+
+Program will generate random key for enctryption, same key needs to be used for decryption.
+Key is 128 bit large Base64 encoded with the following structure:
+    KltlvNcVYlnMJRB9fjZXTA (16 bytes, 22 characters in length)
+
+For avoiding freezing up of tkinter window and mainloop app, threading module is used to split up tasks. (efficiency of threading implementation in this case is not tested)
+
+Security:
+    -considering the usage of combination of 4 basic cryptography ciphers used the algorithm is more secure than most basic ciphers
+    -page for analyzing basic ciphers (https://www.boxentriq.com/code-breaking/cipher-identifier) was unable to analyze the algorithm
+    -key is generated using cryptographicaly secure - token.url_safe() method from secrets module with the length of 128 bit (16 bytes)
+        -total possible url-safe characters: ≈ 64 (ascii_letters + "-", "_")
+        -key length = 22 (128 bit / 16 byte)
+        -total permutations of key: 903,105,905,252,732,332,918,336,906,592,256,000,00 = 9.031059052E+37 (https://www.calculatorsoup.com/calculators/discretemathematics/permutations.php)
+        -as a result key is very hard to guess using brute-force attack (https://en.wikipedia.org/wiki/Brute-force_attack)
+
+    -in summary this algorithm is mostly vulnerable to cryptanalysis (https://en.wikipedia.org/wiki/Cryptanalysis)
+
+icon and graphic design were made using GIMP - version 2.10.22 (https://www.gimp.org/)
+
+Finally, to bundle the application and all its dependencies into one single package I used auto-py-to-exe library (https://pypi.org/project/auto-py-to-exe/).
+To create Windows installer (for easier sharing and exporting of the program) I used NSIS (https://nsis.sourceforge.io/Main_Page).
+
+final software details:
+    Os compatibility: Windows (possibly others, not tested)
+    first release: 21.4.2021
+    first version: 1.0
+    current version: 1.0

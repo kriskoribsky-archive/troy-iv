@@ -1,0 +1,50 @@
+Cryptography reference:
+https://docs.python.org/3/library/index.html
+https://docs.python.org/3/library/exceptions.html#exception-hierarchy
+https://en.wikipedia.org/wiki/Cryptography
+https://en.wikipedia.org/wiki/Encryption
+https://en.wikipedia.org/wiki/Symmetric-key_algorithm
+https://en.wikipedia.org/wiki/UTF-8
+https://www.utf8-chartable.de/
+https://www.quora.com/How-can-I-build-my-own-encryption-algorithm
+https://www.youtube.com/watch?v=jhXCTbFnK8o
+https://www.rapidtables.com/convert/number/hex-to-decimal.html?x=0x110000
+https://crypto.interactive-maths.com/permutation-cipher.html#
+https://www.geeksforgeeks.org/substitution-cipher/
+https://crypto.interactive-maths.com/route-cipher.html
+https://crypto.interactive-maths.com/columnar-transposition-cipher.html
+https://stackoverflow.com/questions/31710606/how-secure-is-my-custom-encryption-algorithm
+https://tmedweb.tulane.edu/content_open/bfcalc.php
+https://webmasters.stackexchange.com/questions/498/which-special-characters-are-safe-to-use-in-url
+https://crypto.stackexchange.com/questions/61782/how-secure-is-a-128-bit-ideal-substitution-cipher
+
+
+
+information useful for text encoding and editing:
+    maximal code point value of UTF-8 character: 1114111
+
+
+
+Tkinter reference:
+https://docs.python.org/3/library/tk.html
+https://docs.python.org/3/library/tkinter.html
+https://www.tutorialspoint.com/python3/python_gui_programming.htm
+https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/index.html
+https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/toplevel.html
+https://manpages.debian.org/buster/tk8.6-doc/options.3tk.en.html
+https://www.w3schools.com/colors/colors_picker.asp
+https://www.delftstack.com/howto/python-tkinter/how-to-set-window-icon-in-tkinter/
+https://likegeeks.com/python-gui-examples-tkinter-tutorial/
+https://stackoverflow.com/questions/16115378/tkinter-example-code-for-multiple-windows-why-wont-buttons-load-correctly
+https://pbaumgarten.com/python/gui-with-pysimplegui.html
+
+
+
+Threading & Thread based parallelism:
+https://docs.python.org/3/library/threading.html
+https://www.youtube.com/watch?v=IEEhzQoKtQU
+
+
+
+Clipboard copy: (using pyperclip)
+https://pypi.org/project/pyperclip/
