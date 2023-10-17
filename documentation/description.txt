@@ -9,7 +9,7 @@ Useful reference for building encryption algorithm (https://www.quora.com/How-ca
 It is capable of encrypting any character within Unicode UTF-8 (https://en.wikipedia.org/wiki/UTF-8).
 UTF-8 standart is capable of encoding roughly 1,112,000 characters -> UTF-8 table (https://www.utf8-chartable.de/).
 
-Encryption techniques used in this algorithm:
+Encryption techniques used:
     1. Substitution cipher (substitution of characters for other characters)
     2. Columnar transposition (route cipher -> the plaintext is written in a grid, and then read off following the route chosen)
     3. Permutation cipher (rearranging characters within the created blocks of text - in our case the length of the key)
